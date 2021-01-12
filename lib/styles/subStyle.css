@@ -1,0 +1,476 @@
+.chkContainer {
+  width: 0px;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: center;
+  text-align: center;
+  /*padding-top: 10px;*/
+}
+
+/* Hide the browser's default checkbox */
+.chkContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+ .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border : 1px solid #DDD;
+}
+
+/* On mouse-over, add a grey background color */
+.chkContainer:hover input ~ .checkmark {
+  background-color: #DDD;
+}
+
+/* When the checkbox is checked, add a blue background */
+.chkContainer input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.chkContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.chkContainer .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+/* Date Picker Pop Up */
+.datepicker 
+{ 
+    z-index: 9999 !important; 
+}
+
+#divBoxTemp
+{
+    /*display: none;*/
+    margin-bottom: 0px !important;
+    box-shadow: 0px 0px 0px !important;
+    margin-top: 0px !important;
+    border: 0px;
+}
+
+#divBoxTemp .box-title
+{
+  font-size : 14px;
+  font-weight: bold;
+}
+
+#divBoxTemp .box-header
+{
+    
+    padding: 0px !important;
+}
+
+#divContacts {
+  max-height   : 218px;
+
+  overflow-x  : hidden;
+  overflow-y  : auto;
+  padding-left: 0px !important;
+  padding-top: 5px;
+}
+
+
+
+#divContacts::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 5px;
+}
+#divContacts:hover::-webkit-scrollbar-thumb {
+  
+  /*background-image  : linear-gradient(to top, #00ccff, fuchsia);*/
+  background-color:   #DDD; 
+  /*opacity: 0.5;*/
+}
+
+.txtNoEvents
+{
+    pointer-events: none;
+}
+.fa
+{
+    font-size : 12px;
+}
+
+
+.is-dragover {
+    /*opacity: 0.6;*/
+    border: 2px dashed  #428bca !important;
+    color: #428bca;
+    opacity: 1 !important;
+}
+
+
+.rowCust
+{
+    display   : none;
+}
+
+#divMatch
+{
+     overflow-x  : hidden;
+    overflow-y  : auto;
+    max-height   : 218px;
+}
+
+#divMatch::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 5px;
+}
+#divMatch:hover::-webkit-scrollbar-thumb {
+  
+  /*background-image  : linear-gradient(to top, #00ccff, fuchsia);*/
+  background-color:   #DDD; 
+  /*opacity: 0.5;*/
+}
+
+
+.nav-tabs li.deactivate {
+  pointer-events: none;
+}
+
+.nav-tabs li.deactivate a {
+  color: #cacaca;
+}
+  
+
+
+.lblText{
+  background-color: #FFF !important;
+  pointer-events: none;
+
+/*  -webkit-transition: padding-left .6s ease-out;
+  -moz-transition: padding-left .6s ease-out;
+  -o-transition: padding-left .6s ease-out;
+  transition: padding-left .6s ease-out;*/
+  
+}
+
+#divAppList{
+    overflow-x  : hidden;
+    overflow-y  : auto;
+    max-height   : 280px;
+}
+
+#divAppList::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 5px;
+}
+#divAppList:hover::-webkit-scrollbar-thumb {
+  
+  /*background-image  : linear-gradient(to top, #00ccff, fuchsia);*/
+  background-color:   #DDD; 
+  /*opacity: 0.5;*/
+}
+
+#divAppHeader div
+{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.fa
+{
+  font-size: 12px !important;
+}
+
+/*@media only screen and (max-width: 600px) {
+  div.form-group {
+    background-color: lightblue;
+  }
+}*/
+
+
+
+
+/* The container */
+.radContainer {
+  width: 0px;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: center;
+  text-align: center;
+}
+
+/* Hide the browser's default radio button */
+.radContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.radContainer .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-color: #ddd;
+  background-color: #eee;
+  border-radius: 50%;
+
+}
+
+/* On mouse-over, add a grey background color */
+.radContainer:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radContainer input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radContainer .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+#frmNewGdpr label
+{
+  font-weight: normal;
+}
+
+.tooltip-inner {
+    min-width: 150px; /* the minimum width */
+}
+
+
+div.divTitleOverlay{
+    border: 1px solid #DDD;
+    width: 97%;
+    margin-left: 1.5%;
+    border-radius: 3px;
+}
+
+div.divTitleOverlay h1{
+    text-align: left;
+    margin-top: -10px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+div.divTitleOverlay h1 span{
+    background-color: white;
+}
+
+.altColor:nth-child(odd){
+    background-color: rgba(0, 0, 0, .03) !important;
+}
+
+.altColor div.form-group {
+  padding: 2px 0px 2px 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.altColor:hover
+{
+  background-color: rgba(0, 0, 0, .1) !important;
+}
+
+
+
+#ulAddress
+{
+    max-width: 250px !important;
+    overflow-x  : hidden !important;
+    overflow-y  : auto !important;
+    max-height: 400px !important;
+}
+
+
+
+#ulAddress::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 5px;
+}
+#ulAddress:hover::-webkit-scrollbar-thumb {
+  
+  /*background-image  : linear-gradient(to top, #00ccff, fuchsia);*/
+  background-color:   #DDD; 
+  /*opacity: 0.5;*/
+}
+
+#spnNewAppBtn a:hover
+{
+  text-decoration: underline;
+}
+
+label.control-label
+{
+    color : #666666 !important;
+    font-weight: normal !important;
+}
+
+.form-control
+{
+    font-size   : 14px !important;
+    color       : #000000 !important;
+}
+
+#modalCustInfo input[type=text],
+#modalcallHistoryInfo input[name=txtModalAppType],
+#modalcallHistoryInfo input[name=txtModalAppFault],
+#modalcallHistoryInfo input[name=txtModalDateCall]
+{
+  border: 0px !important;
+  padding-left: 0px !important;
+  pointer-events: none;
+}
+
+#tblAppliance >tbody> tr,
+#tblListDataCallHistory  >tbody> tr
+{
+  cursor: pointer;
+}
+
+
+.divReportBody
+{
+  max-height: 360px;
+  overflow: auto; 
+}
+
+.divReportBody::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 5px;
+}
+.divReportBody:hover::-webkit-scrollbar-thumb {
+  background-color:   #DDD; 
+}
+
+::-webkit-scrollbar{
+        height: 4px;
+        width: 2px;
+}
+.divReportBody:hover::-webkit-scrollbar-thumb:horizontal{
+    background: #DDD;
+    border-radius: 5px;
+}
+
+.bg-support-active{
+  background-color:  #3c8dbc !important;
+  color: #fff !important;
+}
+
+
+
+/*select.toView, input[type=text].toView
+{
+    border          : 0px;
+    background      : #FFFFFF;
+    padding-left    : 0px;
+    pointer-events  : none;
+}
+
+select.toView::-ms-expand {
+    display: none;
+}
+
+select.toView{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+span.toView
+{
+    display: none;
+}*/
+
+.btn {
+    
+    font-size       : 14px !important;
+    padding         : 3.5px 10px !important;
+}
+
+.input-group-btn button {
+    border-top-left-radius      : 0px !important;
+    border-bottom-left-radius   : 0px !important;
+}
+
+
+.boxPolicy {
+    border-top     : 1px solid #d2d6de;
+}
+
+.boxPolicy button.btn-box-tool i {
+   font-weight     : normal !important;
+   font-size       : 12px !important;
+}
+
+
+.frmView input, .frmView span.input-group-addon{
+  border          : 0px !important;
+  pointer-events  : none;
+  padding-left    : 0px !important;
+}
+
+
+.btnCollapse
+{
+  cursor: pointer;
+}

@@ -1,0 +1,133 @@
+.divReportBody i, .fa-gear, .tableReport th i
+{
+	cursor: pointer;
+}
+
+#ulColDrop li a
+{
+  padding-left: 5px !important;
+}
+
+.chkColCheckbox {
+  width: 0px;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: center;
+  text-align: center;
+  /*padding-top: 10px;*/
+
+}
+
+/* Hide the browser's default checkbox */
+.chkColCheckbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.chkColCheckbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border : 1px solid rgba(0, 0, 0, 0) !important;
+}
+
+/* On mouse-over, add a grey background color */
+.chkColCheckbox:hover input ~ .checkmark {
+  background-color: #DDD;
+}
+
+/* When the checkbox is checked, add a blue background */
+.chkColCheckbox input:checked ~ .checkmark {
+  /*background-color: #2196F3;*/
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.chkColCheckbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.chkColCheckbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.chkColCheckbox .checkmark:after {
+  left: 9px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.trRepData th i.fa, ul.pagination i.fa
+{
+  font-size: 12px !important;
+}
+
+.week-highlight
+{
+  background-color: rgba(0,0,0,.05) !important;
+  color : #000 !important;
+}
+
+
+.selectMulti
+{
+  max-height: 30px;
+}
+
+.spnRepFileName
+{
+  font-weight: normal;
+  font-size: 11px;
+  width: 60%;
+  overflow:hidden; 
+  white-space:nowrap; 
+  text-overflow: ellipsis;
+}
+
+.highlight {
+    background-color: #3c8dbc;
+    font-weight: bold;
+    color : #FFFFFF;
+}
+
+
+/*.tableReport tr td, .table-data tr td*/
+.table tr td
+{
+    padding : 3px 2px 3px 5px !important;
+    font-size : 14px !important;
+}
+
+.table tr th
+{
+    padding : 3px 2px 3px 5px !important;
+
+}
+
+
+#abbrDateType
+{
+  color : #000000;
+}

@@ -1,0 +1,24 @@
+**************************************************************************************
+*DATETIME 	:	 2019-07-05 09:15:42
+*FILENAME 	:	 D:\xampp\htdocs\hatvcv2\executor\read_uploads.php
+*LINENUM 	:	 252
+*MESSAGES 	:	  | You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SCLOSE'' at line 3
+**************************************************************************************
+**************************************************************************************
+*DATETIME 	:	 2019-07-05 09:16:39
+*FILENAME 	:	 D:\xampp\htdocs\hatvcv2\executor\read_uploads.php
+*LINENUM 	:	 252
+*MESSAGES 	:	  | You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SVALE'' at line 3
+**************************************************************************************
+**************************************************************************************
+*DATETIME 	:	 2019-07-05 09:17:49
+*FILENAME 	:	 D:\xampp\htdocs\hatvcv2\executor\read_uploads.php
+*LINENUM 	:	 252
+*MESSAGES 	:	  | You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SCL'' at line 3
+**************************************************************************************
+**************************************************************************************
+*DATETIME 	:	 2019-07-05 09:18:37
+*FILENAME 	:	 D:\xampp\htdocs\hatvcv2\executor\read_uploads.php
+*LINENUM 	:	 252
+*MESSAGES 	:	  | You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SRD'' at line 3
+**************************************************************************************
